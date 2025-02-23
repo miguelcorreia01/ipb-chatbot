@@ -23,10 +23,6 @@ pip install -r requirements.txt
 Create your own .env file with the following variables:
 ```bash
 OPENAI_API_KEY=your_openai_api_key
-LANGCHAIN_ENDPOINT=your_langchain_endpoint
-LANGCHAIN_API_KEY=your_langchain_api_key
-LANGCHAIN_PROJECT=your_langchain_project
-LANGCHAIN_TRACING_V2=true
 PINECONE_API_KEY=your_pinecone_api_key
 MONGO_URI=your_mongo_database_uri
 ```
