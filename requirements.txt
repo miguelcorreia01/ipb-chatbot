@@ -1,0 +1,17 @@
+streamlit
+streamlit-feedback
+langchain
+langchain-community
+langchain-openai
+langchain-pinecone
+python-dotenv
+pinecone-client
+pymongo
+fuzzywuzzy
+tiktoken
+requests
+beautifulsoup4
+html2text
+flask
+werkzeug
+pytz
