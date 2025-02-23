@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .chat-circle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;  
+      height: 60px; 
+      background-color: #87004E;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px; /* Aumentado de 30px para 40px */
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 450px;  /* Aumentado de 300px para 350px */
+      height: 550px; /* Aumentado de 400px para 450px */
+      background-color: white;
+      border: 1px solid #87004E;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background-color: #87004E;
+      color: white;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #87004E;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100% - 30px); /* Ajustar para deixar espaço para o cabeçalho */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-circle" onclick="toggleChatPopup()">
+    <img src="logo.png" alt="Chat Logo"> <!-- Replace with your logo URL -->
+  </div>
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">IPB Chatbot</div>
+    <iframe src="http://localhost:8501" frameborder="0" style="width:100%; height:100%;"></iframe>
+  </div>
+
+  <script>
+    function toggleChatPopup() {
+      var chatPopup = document.getElementById("chatPopup");
+      if (chatPopup.style.display === "none" || chatPopup.style.display === "") {
+        chatPopup.style.display = "block";
+      } else {
+        chatPopup.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

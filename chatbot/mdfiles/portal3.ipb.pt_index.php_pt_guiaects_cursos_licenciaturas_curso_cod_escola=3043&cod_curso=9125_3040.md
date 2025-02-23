@@ -1,0 +1,344 @@
+Source: https://portal3.ipb.pt/index.php/pt/guiaects/cursos/licenciaturas/curso?cod_escola=3043&cod_curso=9125
+
+| |---|---  
+  
+| |   
+---|---|---  
+  
+| |   
+---|---|---  
+  
+  
+
+## Engenharia Química
+
+  
+
+##### Diploma conferido
+
+Licenciatura em Engenharia Química. Título de Licenciado.  
+  
+
+##### Nível da qualificação
+
+1.º Ciclo de Estudos. Nível 6 do EQF. Nível 6 do ISCED 2011.  
+  
+
+##### Requisitos de Acesso
+
+Os estudantes podem candidatar-se ao 1.º ciclo de estudos através do regime
+geral de acesso, dos regimes especiais de acesso e de concursos especiais,
+conforme consta da descrição do Sistema de Ensino Superior Português,
+disponibilizada pelo NARIC
+(http://www.dges.mctes.pt/DGES/pt/Reconhecimento/NARICENIC/) e apresentada na
+secção 8 do Suplemento ao Diploma. Podem candidatar-se, através de concurso
+nacional, os estudantes que obtenham uma classificação mínima de 95 pontos
+(numa escala de 0 a 200) numa das seguintes provas nacionais de ingresso:
+Química (07) e Matemática (16).  
+  
+
+##### Creditação das aprendizagens prévias
+
+No seguimento da implementação do Processo de Bolonha e consequente legislação
+relativa à mobilidade dos estudantes entre cursos e estabelecimentos de ensino
+superior, deve ser alvo de creditação a formação realizada pelo estudante no
+âmbito de outros ciclos de estudos superiores, em estabelecimentos de ensino
+superior, nacionais ou estrangeiros (creditação da formação certificada), bem
+como ser reconhecida a sua experiência profissional e a formação pós-
+secundária. Nesse sentido, o IPB fomenta a creditação das aprendizagens
+prévias do estudante que ingressa numa formação da instituição.  
+Com vista à plena e célere integração do estudante no seu novo plano de
+formação, os processos de creditação da formação certificada e da experiência
+profissional devem ser submetidos aquando do seu ingresso no IPB, no ato da
+candidatura ao acesso ou matrícula.  
+Para mais informação sobre o processo de creditação no IPB (momentos,
+procedimentos e critérios dos processos de creditação), consulte o Portal do
+Candidato do IPB, em www.ipb.pt/portaldocandidato, ou a página Web dos
+Serviços Académicos do IPB, em www.ipb.pt/sa.  
+  
+
+##### Requisitos da qualificação e regulamentos
+
+6 Semestres curriculares (3 anos). 20 Semanas de estudo, por semestre, a tempo
+inteiro (40 por ano). 40 Horas totais por semana. 810 Horas totais por
+semestre (1620 por ano). 180 Créditos do ECTS (30 por semestre),
+correspondendo 1 crédito a 27 horas. Inclui um projeto de 6 créditos.  
+Os detentores da qualificação são admitidos na ANET – Academia Nacional dos
+Engenheiros Técnicos. Os títulos profissionais são atribuídos por esta
+instituição, de acordo com as suas normas internas.  
+O curso está registado no INDEX FEANI - Federação Europeia das Associações
+Nacionais de Engenheiros.  
+  
+
+##### Perfil do programa de estudos
+
+O perfil do programa de estudos compreende o desenvolvimento do conhecimento
+técnico-científico e do saber de natureza profissional nas áreas de estudos de
+Termodinâmica e Fenómenos de Transferência; Engenharia dos Processos Químicos;
+Química  
+  
+
+##### Principais resultados da aprendizagem
+
+O grau de licenciado em Engenharia Química é conferido aos alunos que
+demonstrem ter, nesta área, a capacidade de:  
+a) desenvolver e aprofundar os conhecimentos adquiridos;  
+b) aplicar os conhecimentos adquiridos, de forma a evidenciar uma abordagem
+profissional ao trabalho desenvolvido;  
+c) resolver problemas e de construir e fundamentar a sua própria argumentação;  
+d) recolher, selecionar e interpretar a informação relevante, que habilite a
+fundamentar as soluções preconizadas e os juízos emitidos, incluindo na
+análise os aspetos sociais, científicos e éticos relevantes;  
+e) comunicar informação, ideias, problemas e soluções, tanto a públicos
+constituídos por especialistas como por não especialistas;  
+f) desenvolver competências que permitam uma aprendizagem ao longo da vida com
+elevado grau de autonomia.  
+  
+Para concluir a qualificação, o aluno terá de obter aprovação a todas as
+unidades curriculares obrigatórias do plano de estudos.  
+  
+  
+
+##### Perfil ocupacional dos diplomados
+
+A licenciatura em Engenharia Química e Biológica insere-se na área de formação
+de Tecnologias, estando os seus diplomados habilitados para o exercício de uma
+atividade de carácter profissional, no âmbito do perfil do programa de
+estudos.  
+  
+
+##### Acesso a outros ciclos de estudos
+
+O grau de licenciado permite o prosseguimento de estudos pós-graduados, de
+acordo com o organograma do Sistema de Ensino Superior Português,
+disponibilizado pelo NARIC
+(http://www.dges.mctes.pt/DGES/pt/Reconhecimento/NARICENIC/) e apresentado na
+secção 8 do Suplemento ao Diploma.  
+  
+
+##### Requisitos de graduação
+
+Nota: Curso lecionado integralmente em Inglês  
+  
+
+##### Regulamentos de exames, avaliação e classificação
+
+A realização de exames e a avaliação seguem o regulamento do IPB, disponível
+em www.ipb.pt/sa, e o regulamento pedagógico da Escola, disponível em
+www.estig.ipb.pt.  
+Para informação sobre o sistema de classificação e qualificação, consulte,
+neste Guia, a opção “O ECTS no IPB”.  
+  
+
+##### Regime de estudos
+
+Tempo inteiro.  
+  
+
+##### Diretor de Curso
+
+Antonio Manuel Esteves Ribeiro (  
+| Este endereço de email está protegido contra piratas. Necessita ativar o
+JavaScript para o visualizar.)  
+  
+---|---  
+  
+* * *
+
+  
+
+##### Áreas científicas que integram o plano de estudos
+
+Área Científica| Sigla| Créditos ECTS  
+---|---|---  
+Obrigatórios| Opcionais  
+Biologia| Bio| 6.0| 0.0  
+Biotecnologia| BTc| 12.0| 0.0  
+Engenharia dos Processos Químicos| EPQ| 27.0| 0.0  
+Física| Fis| 6.0| 0.0  
+Informática| Inf| 6.0| 0.0  
+Matemática| Mat| 30.0| 0.0  
+Química| Qui| 36.0| 0.0  
+Tecnologia do Ambiente| TcA| 6.0| 0.0  
+Termodinâmica e Fenómenos de Transferência| TFT| 39.0| 0.0  
+Todas as do IPB| TIPB| 12.0| 0.0  
+**Total**  
+| 180.0| 0.0  
+  
+#####  
+Plano de estudos
+
+Ano| Sem| Tipo| Código| Unidade Curricular| Área  
+Científica| Créditos  
+ECTS  
+---|---|---|---|---|---|---  
+1| 1|  Semestral  
+|  9125-755-1101-00-23  
+| [Álgebra Linear e Geometria
+Analítica](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1101&n_opcao=0&ano_lect=2023&locale=1
+"Álgebra Linear e Geometria Analítica")| Mat| 6.0  
+1| 1|  Semestral  
+|  9125-755-1102-00-23  
+| [Cálculo
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1102&n_opcao=0&ano_lect=2023&locale=1
+"Cálculo I")| Mat| 6.0  
+1| 1|  Semestral  
+|  9125-755-1103-00-23  
+|
+[Física](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1103&n_opcao=0&ano_lect=2023&locale=1
+"Física")| Fis| 6.0  
+1| 1|  Semestral  
+|  9125-755-1104-00-23  
+|
+[Informática](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1104&n_opcao=0&ano_lect=2023&locale=1
+"Informática")| Inf| 6.0  
+1| 1|  Semestral  
+|  9125-755-1105-00-23  
+| [Química Geral
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1105&n_opcao=0&ano_lect=2023&locale=1
+"Química Geral I")| Qui| 6.0  
+1| 2|  Semestral  
+|  9125-755-1201-00-23  
+|
+[Biologia](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1201&n_opcao=0&ano_lect=2023&locale=1
+"Biologia")| Bio| 6.0  
+1| 2|  Semestral  
+|  9125-755-1202-00-23  
+| [Cálculo
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1202&n_opcao=0&ano_lect=2023&locale=1
+"Cálculo II")| Mat| 6.0  
+1| 2|  Semestral  
+|  9125-755-1203-00-23  
+| [Mecânica dos
+Fluídos](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1203&n_opcao=0&ano_lect=2023&locale=1
+"Mecânica dos Fluídos")| TFT| 6.0  
+1| 2|  Semestral  
+|  9125-755-1204-00-23  
+| [Química Geral
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1204&n_opcao=0&ano_lect=2023&locale=1
+"Química Geral II")| Qui| 6.0  
+1| 2|  Semestral  
+|  9125-755-1205-00-23  
+| [Química Orgânica
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=1205&n_opcao=0&ano_lect=2023&locale=1
+"Química Orgânica I")| Qui| 6.0  
+2| 1|  Semestral  
+|  9125-755-2101-00-23  
+|
+[Estatística](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2101&n_opcao=0&ano_lect=2023&locale=1
+"Estatística")| Mat| 6.0  
+2| 1|  Semestral  
+|  9125-755-2102-00-23  
+| [Métodos Instrumentais de
+Análise](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2102&n_opcao=0&ano_lect=2023&locale=1
+"Métodos Instrumentais de Análise")| Qui| 6.0  
+2| 1|  Semestral  
+|  9125-755-2103-00-23  
+| [Projeto de
+Química](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2103&n_opcao=0&ano_lect=2023&locale=1
+"Projeto de Química")| Qui| 6.0  
+2| 1|  Semestral  
+|  9125-755-2104-00-23  
+| [Química Orgânica
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2104&n_opcao=0&ano_lect=2023&locale=1
+"Química Orgânica II")| Qui| 6.0  
+2| 1|  Semestral  
+|  9125-755-2105-00-23  
+| [Termodinâmica Química
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2105&n_opcao=0&ano_lect=2023&locale=1
+"Termodinâmica Química I")| TFT| 6.0  
+2| 2|  Semestral  
+|  9125-755-2201-00-23  
+| [Análise de
+Processos](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2201&n_opcao=0&ano_lect=2023&locale=1
+"Análise de Processos")| EPQ| 6.0  
+2| 2|  Semestral  
+|  9125-755-2202-00-23  
+| [Engenharia das
+Reações](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2202&n_opcao=0&ano_lect=2023&locale=1
+"Engenharia das Reações")| EPQ| 6.0  
+2| 2|  Semestral  
+|  9125-755-2203-00-23  
+| [Fenómenos de Transferência
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2203&n_opcao=0&ano_lect=2023&locale=1
+"Fenómenos de Transferência I")| TFT| 6.0  
+2| 2|  Semestral  
+|  9125-755-2204-00-23  
+| [Métodos
+Numéricos](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2204&n_opcao=0&ano_lect=2023&locale=1
+"Métodos Numéricos")| Mat| 6.0  
+2| 2|  Semestral  
+|  9125-755-2205-00-23  
+| [Termodinâmica Química
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=2205&n_opcao=0&ano_lect=2023&locale=1
+"Termodinâmica Química II")| TFT| 6.0  
+3| 1|  Semestral  
+|  9125-755-3101-00-23  
+| [Fenómenos de Transferência
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3101&n_opcao=0&ano_lect=2023&locale=1
+"Fenómenos de Transferência II")| TFT| 6.0  
+3| 1|  Semestral  
+|  9125-755-3102-00-23  
+| [Laboratórios de Controlo de Qualidade
+Ambiental](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3102&n_opcao=0&ano_lect=2023&locale=1
+"Laboratórios de Controlo de Qualidade Ambiental")| TcA| 6.0  
+3| 1|  Semestral  
+|  9125-755-3103-00-23  
+| [Laboratórios de Engenharia Química
+I](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3103&n_opcao=0&ano_lect=2023&locale=1
+"Laboratórios de Engenharia Química I")| TFT| 6.0  
+3| 1|  Semestral  
+|  9125-755-3104-00-23  
+| [Microbiologia Aplicada e
+Bioprocessos](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3104&n_opcao=0&ano_lect=2023&locale=1
+"Microbiologia Aplicada e Bioprocessos")| BTc| 6.0  
+3| 1|  Semestral  
+|  9125-755-3105-00-23  
+| Unidade Livre IPB I| TIPB| 6.0  
+3| 2|  Semestral  
+|  9125-755-3201-00-23  
+| [Laboratórios de Engenharia Química
+II](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3201&n_opcao=0&ano_lect=2023&locale=1
+"Laboratórios de Engenharia Química II")| EPQ| 6.0  
+3| 2|  Semestral  
+|  9125-755-3202-00-23  
+| [Processos de
+Separação](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3202&n_opcao=0&ano_lect=2023&locale=1
+"Processos de Separação")| EPQ| 6.0  
+3| 2|  Semestral  
+|  9125-755-3203-00-23  
+| [Projeto de Engenharia
+Química](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3203&n_opcao=0&ano_lect=2023&locale=1
+"Projeto de Engenharia Química")| EPQ/  
+TFT| 6.0  
+3| 2|  Semestral  
+|  9125-755-3204-00-23  
+| [Tecnologia
+Alimentar](https://guiaects.ipb.pt/GuiaEcts/PdfService?cod_escola=3043&cod_curso=9125&n_plano=755&n_disciplina=3204&n_opcao=0&ano_lect=2023&locale=1
+"Tecnologia Alimentar")| BTc| 6.0  
+3| 2|  Semestral  
+|  9125-755-3205-00-23  
+| Unidade Livre IPB II| TIPB| 6.0  
+  
+
+##### Acreditação/Registo
+
+Com Acreditação em 2022, por 4 anos | Limite de vagas fixado: 36  
+Registo inicial: R/A-Ef 309/2011 de 18-03-2011  
+Registos de alteração: R/A-Ef 309/2011/AL01 de 14-07-2017 | R/A-Ef 309/2011/AL02 de 13-07-2022  
+  
+Nota: Curso lecionado integralmente em Inglês
+
+* * *
+
+##### Documentos adicionais
+
+[A3ES - Relatório de auto-
+avaliação](https://guiaects.ipb.pt/GuiaEcts/PdfCursoDownloadServlet?documentoId=1918)  
+
+[A3ES - Acreditação do curso](http://www.a3es.pt/pt/resultados-
+acreditacao/engenharia-quimica-e-biologica-0)  
+
+  
+  
+  

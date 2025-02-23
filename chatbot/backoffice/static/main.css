@@ -1,0 +1,61 @@
+body { 
+    padding-top: 60px;
+ }
+ .navbar-custom {
+    background-color: #93278F;
+ }
+ .navbar-custom .navbar-brand,
+ .navbar-custom .nav-link {
+    color: white;
+ }
+ .chat-circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;  
+    height: 60px; 
+    background-color: #87004E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 450px;
+    height: 550px; 
+    background-color: white;
+    border: 1px solid #87004E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .chat-header {
+    background-color: #87004E;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #87004E;
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100% - 40px); 
+    border: none;
+  }

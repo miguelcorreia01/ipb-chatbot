@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - IPB Chatbot{% endblock %}
+
+{% block content %}
+<h1>Estatísticas</h1>
+<div class="mb-3">
+    <label for="timeRange" class="form-label">Intervalo de tempo:</label>
+    <select id="timeRange" class="form-select">
+        <option value="1d">1 Dia</option>
+        <option value="1w">7 Dias</option>
+        <option value="30d" selected>30 Dias</option>
+        <option value="1y">1 Ano</option>
+        <option value="all">Sempre</option>
+    </select>
+</div>
+<div id="error-message" class="alert alert-danger" style="display: none;"></div>
+<div id="generalStats" class="row mb-4">
+</div>
+<ul class="nav nav-tabs" id="dashboardTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="charts-tab" data-bs-toggle="tab" data-bs-target="#charts" type="button" role="tab" aria-controls="charts" aria-selected="true">Gráficos</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="feedback-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback" aria-selected="false">Mensagens de Feedback</button>
+    </li>
+</ul>
+
+<div class="tab-content" id="dashboardTabsContent">
+    <div class="tab-pane fade show active" id="charts" role="tabpanel" aria-labelledby="charts-tab">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <canvas id="interactionsChart"></canvas>
+            </div>
+            <div class="col-md-6 mb-4">
+                <canvas id="feedbackChart"></canvas>
+            </div>
+            <div class="col-md-6 mb-4">
+                <canvas id="tokensChart"></canvas>
+            </div>
+            <div class="col-md-6 mb-4">
+                <canvas id="latencyChart"></canvas>
+            </div>
+            <div class="col-md-6 mb-4">
+                <canvas id="costChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+        <div class="row mt-3">
+            <div class="col-12">
+                <ul id="feedbackMessages" class="list-group mb-3">
+                </ul>
+                <nav aria-label="Feedback messages navigation">
+                    <ul class="pagination justify-content-center" id="feedbackPagination">
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let charts = {};
+    const feedbackLabels = ['1-😞', '2-🙁', '3-😐', '4-🙂', '5-😀'];
+
+    let allFeedbackMessages = [];
+    const messagesPerPage = 10;
+    let currentPage = 1;
+
+    function showError(message) {
+        const errorDiv = document.getElementById('error-message');
+        errorDiv.textContent = message;
+        errorDiv.style.display = 'block';
+    }
+
+    function createLineChart(canvasId, label, data, labels) {
+        console.log(`Creating chart: ${canvasId}`);
+        const ctx = document.getElementById(canvasId).getContext('2d');
+        return new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: label,
+                    data: data,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    function createFeedbackChart(canvasId, data) {
+        console.log(`Creating feedback chart: ${canvasId}`);
+        const ctx = document.getElementById(canvasId).getContext('2d');
+        return new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: feedbackLabels,
+                datasets: [{
+                    label: 'Feedback',
+                    data: data,
+                    backgroundColor: 'rgb(54, 162, 235)',
+                    borderColor: 'rgb(75, 192, 192)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    function updateGeneralStats(stats) {
+        console.log('Updating general stats:', stats);
+        const generalStatsDiv = document.getElementById('generalStats');
+        generalStatsDiv.innerHTML = `
+            <div class="col-md-3 mb-2">
+                <strong>Total Interações:</strong> ${stats.total_interactions}
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Max Tokens:</strong> ${stats.max_tokens}
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Min Tokens:</strong> ${stats.min_tokens}
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Max Latência:</strong> ${stats.max_latency.toFixed(2)}s
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Min Latência:</strong> ${stats.min_latency.toFixed(2)}s
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Latencia média:</strong> ${stats.avg_latency.toFixed(2)}s
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Feedback médio:</strong> ${stats.avg_feedback.toFixed(2)}
+            </div>
+            <div class="col-md-3 mb-2">
+                <strong>Custo total:</strong> $${stats.total_cost.toFixed(2)}
+            </div>
+        `;
+    }
+
+    function updateFeedbackMessages(messages) {
+        const feedbackMessagesUl = document.getElementById('feedbackMessages');
+        feedbackMessagesUl.innerHTML = '';
+        messages.forEach(message => {
+            if (message.feedback_message) {
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.innerHTML = `
+                    <strong>${new Date(message.timestamp).toLocaleString()}</strong>: ${message.feedback_message}
+                `;
+                feedbackMessagesUl.appendChild(li);
+            }
+        });
+        
+        if (feedbackMessagesUl.children.length === 0) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.textContent = 'Sem mensagens de feedback para o intervalo de tempo especificado.';
+            feedbackMessagesUl.appendChild(li);
+        }
+    }
+
+    function updateFeedbackMessages(messages) {
+        allFeedbackMessages = messages.filter(message => message.feedback_message);
+        displayFeedbackMessages(1);
+    }
+
+    function displayFeedbackMessages(page) {
+        const feedbackMessagesUl = document.getElementById('feedbackMessages');
+        feedbackMessagesUl.innerHTML = '';
+        
+        const startIndex = (page - 1) * messagesPerPage;
+        const endIndex = startIndex + messagesPerPage;
+        const pageMessages = allFeedbackMessages.slice(startIndex, endIndex);
+
+        if (pageMessages.length === 0) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.textContent = 'Sem mensagens de feedback para o intervalo de tempo especificado.';
+            feedbackMessagesUl.appendChild(li);
+        } else {
+            pageMessages.forEach(message => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.innerHTML = `
+                    <strong>${new Date(message.timestamp).toLocaleString()}</strong>: ${message.feedback_message}
+                `;
+                feedbackMessagesUl.appendChild(li);
+            });
+        }
+
+        updatePagination(page);
+    }
+
+    function updatePagination(currentPage) {
+        const totalPages = Math.ceil(allFeedbackMessages.length / messagesPerPage);
+        const paginationUl = document.getElementById('feedbackPagination');
+        paginationUl.innerHTML = '';
+
+        if (totalPages > 1) {
+            // Previous button
+            const prevLi = document.createElement('li');
+            prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+            prevLi.innerHTML = `<a class="page-link" href="#" data-page="${currentPage - 1}">Anterior</a>`;
+            paginationUl.appendChild(prevLi);
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+                li.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
+                paginationUl.appendChild(li);
+            }
+
+            const nextLi = document.createElement('li');
+            nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+            nextLi.innerHTML = `<a class="page-link" href="#" data-page="${currentPage + 1}">Próximo</a>`;
+            paginationUl.appendChild(nextLi);
+        }
+
+        paginationUl.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const newPage = parseInt(this.getAttribute('data-page'));
+                if (newPage >= 1 && newPage <= totalPages) {
+                    displayFeedbackMessages(newPage);
+                }
+            });
+        });
+    }
+
+    function updateCharts(timeRange) {
+        console.log(`Fetching data for time range: ${timeRange}`);
+        fetch(`/api/stats?time_range=${timeRange}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Received data:', data);
+                updateGeneralStats(data.general_stats);
+                updateFeedbackMessages(data.feedback_messages);
+
+                charts.interactions.data.labels = data.dates;
+                charts.interactions.data.datasets[0].data = data.interactions;
+                charts.interactions.update();
+
+                charts.tokens.data.labels = data.dates;
+                charts.tokens.data.datasets[0].data = data.tokens;
+                charts.tokens.update();
+
+                charts.latency.data.labels = data.dates;
+                charts.latency.data.datasets[0].data = data.latencies;
+                charts.latency.update();
+
+                charts.feedback.data.datasets[0].data = [
+                    data.feedback_distribution[1],
+                    data.feedback_distribution[2],
+                    data.feedback_distribution[3],
+                    data.feedback_distribution[4],
+                    data.feedback_distribution[5]
+                ];
+                charts.feedback.update();
+
+                charts.cost.data.labels = data.dates;
+                charts.cost.data.datasets[0].data = data.cost
+                charts.cost.update(); 
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showError(`Failed to fetch data: ${error.message}`);
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM content loaded');
+        fetch('/api/stats?time_range=30d')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Initial data received:', data);
+                updateGeneralStats(data.general_stats);
+                updateFeedbackMessages(data.feedback_messages);
+
+                charts.interactions = createLineChart('interactionsChart', 'Interações', data.interactions, data.dates);
+                charts.tokens = createLineChart('tokensChart', 'Total Tokens', data.tokens, data.dates);
+                charts.latency = createLineChart('latencyChart', 'Latência', data.latencies, data.dates);
+                charts.feedback = createFeedbackChart('feedbackChart', [
+                    data.feedback_distribution[1],
+                    data.feedback_distribution[2],
+                    data.feedback_distribution[3],
+                    data.feedback_distribution[4],
+                    data.feedback_distribution[5]
+                ]);
+                charts.cost = createLineChart('costChart', 'Custo', data.dates);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showError(`Failed to fetch initial data: ${error.message}`);
+            });
+
+        document.getElementById('timeRange').addEventListener('change', function() {
+            updateCharts(this.value);
+        });
+    });
+</script>
+{% endblock %}

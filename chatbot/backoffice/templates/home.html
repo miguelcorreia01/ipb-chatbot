@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home - IPB Chatbot{% endblock %}
+
+{% block content %}
+<h1>Welcome to IPB Chatbot</h1>
+<div class="chat-circle" onclick="toggleChatPopup()"><img src="\static\logo.png" alt="Chat Logo"></div>
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">IPB Chatbot</div>
+        <iframe src="http://localhost:8501"></iframe>
+    </div>
+
+    <script>
+        function toggleChatPopup(){
+            var chatPopup= document.getElementById("chatPopup");
+            if(chatPopup.style.display ==="none" || chatPopup.style.display===""){
+                chatPopup.style.display ="block";
+            } else {
+                chatPopup.style.display = "none"
+            }
+        }
+    </script>
+
+{% endblock %}
